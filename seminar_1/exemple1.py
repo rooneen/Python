@@ -13,17 +13,21 @@
 #     print(f"first = {first} < second = {second}")            
 
 
-# firstClass = int(input("Кол-во человек в первом классе "))
-# secondClass = int(input("Кол-во человек во втором классе "))
-# thirdClass = int(input("Кол-во человек в третьем классе "))
+firstClass = int(input("Кол-во человек в первом классе "))
+secondClass = int(input("Кол-во человек во втором классе "))
+thirdClass = int(input("Кол-во человек в третьем классе "))
 
-# schoolDesk = (firstClass + secondClass + thirdClass) // 2
+schoolDesk1 = firstClass // -2
+schoolDesk2 = secondClass // -2
+schoolDesk3= thirdClass // -2
 
-# print(f"Кол-во парт = {schoolDesk}")
+schoolDeskAll = schoolDesk1 + schoolDesk2 + schoolDesk3
 
-n = int(input("Машина проезжает за день -  "))
-m = int(input("Длинна маршрута -  "))
+print(f"Кол-во парт = {-schoolDeskAll}")
 
-d = (m // -n)
+# n = int(input("Машина проезжает за день -  "))
+# m = int(input("Длинна маршрута -  "))
 
-print(f"Проедет за {-d} дней")
+# d = (m // -n)
+
+# print(f"Проедет за {-d} дней")
