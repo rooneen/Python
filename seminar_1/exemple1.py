@@ -67,15 +67,15 @@
 # Output: YES
 
 
-year = int(input("Введите год: "))
+# year = int(input("Введите год: "))
 
-if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
+# if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
 
-    print("Год високосный")
+#     print("Год високосный")
 
-else:
+# else:
 
-    print("Год не високосный")
+#     print("Год не високосный")
 
 
 
@@ -93,3 +93,22 @@ else:
 # невозможно.
 # Input: 3 4(ввод на разных строках)
 # Output: 6
+
+
+bilet = int(input("Введите номер в билете: "))
+vagon = int(input("Введите номер в вагоне: "))
+
+res = bilet + vagon - 1
+
+if bilet == vagon:
+
+    print("без дополнительной информации это сделать невозможно")
+
+else:
+
+    print(res)
+
+
+
+
+    
