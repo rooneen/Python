@@ -17,13 +17,13 @@ firstClass = int(input("Кол-во человек в первом классе 
 secondClass = int(input("Кол-во человек во втором классе "))
 thirdClass = int(input("Кол-во человек в третьем классе "))
 
-schoolDesk1 = firstClass // -2
-schoolDesk2 = secondClass // -2
-schoolDesk3= thirdClass // -2
+schoolDesk1 = firstClass // 2 + firstClass % 2
+schoolDesk2 = secondClass // 2 + secondClass % 2
+schoolDesk3= thirdClass // 2 + thirdClass % 2
 
 schoolDeskAll = schoolDesk1 + schoolDesk2 + schoolDesk3
 
-print(f"Кол-во парт = {-schoolDeskAll}")
+print(f"Кол-во парт = {schoolDeskAll}")
 
 # n = int(input("Машина проезжает за день -  "))
 # m = int(input("Длинна маршрута -  "))
