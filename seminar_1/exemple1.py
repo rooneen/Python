@@ -95,20 +95,57 @@
 # Output: 6
 
 
-bilet = int(input("Введите номер в билете: "))
-vagon = int(input("Введите номер в вагоне: "))
+# bilet = int(input("Введите номер в билете: "))
+# vagon = int(input("Введите номер в вагоне: "))
 
-res = bilet + vagon - 1
+# res = bilet + vagon - 1
 
-if bilet == vagon:
+# if bilet == vagon:
 
-    print("без дополнительной информации это сделать невозможно")
+#     print("без дополнительной информации это сделать невозможно")
+
+# else:
+
+#     print(res)
+
+
+# n = 60
+
+# petya = int (n / 6)
+# serega = int (n / 6)
+# katia = int ((petya + serega) * 2)
+
+# print(f"{petya} {katia} {serega}")
+
+# n = 123
+
+# n1 = n // 100
+# n2 = (n % 100) // 10
+# n3 = n % 10 
+
+# res = n1 + n2 + n3
+
+# print(res)
+
+
+n = 123456
+
+n1 = n // 100000
+n2 = (n % 100000) // 10000
+n3 = (n % 10000) // 1000
+
+n4 = (n % 1000) // 100
+n5 = (n % 100) // 10
+n6 = n % 10 
+
+res1 = n1 + n2 + n3
+
+res2 = n4 + n5 + n6
+
+if (res1 == res2):
+
+    print("yes")
 
 else:
 
-    print(res)
-
-
-
-
-    
+    print("no")  
