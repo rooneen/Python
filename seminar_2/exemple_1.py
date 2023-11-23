@@ -10,7 +10,7 @@ i = 1
 res = 1
 while 0 < i <= n:
 
-    res = res * i    
-    i = i + 1
+    res *= i    
+    i += 1
 
 print (res)
