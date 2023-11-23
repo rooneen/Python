@@ -5,3 +5,12 @@
 # Input: 5
 # Output: 120
 
+n = int(input("введите число "))
+i = 1
+res = 1
+while 0 < i <= n:
+
+    res = res * i    
+    i = i + 1
+
+print (res)
