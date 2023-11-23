@@ -128,24 +128,46 @@
 # print(res)
 
 
-n = 123456
+n = 123123
 
-n1 = n // 100000
-n2 = (n % 100000) // 10000
-n3 = (n % 10000) // 1000
+n1 = (str(n))
 
-n4 = (n % 1000) // 100
-n5 = (n % 100) // 10
-n6 = n % 10 
+res1 = (int(n1[0]) + int(n1[1]) + int(n1[2]))
 
-res1 = n1 + n2 + n3
+res2 = (int(n1[3]) + int(n1[4]) + int(n1[5]))
 
-res2 = n4 + n5 + n6
+print(res1==res2)
 
-if (res1 == res2):
+#print(f"{n1[0] + n1[1] + n1[2]}")
 
-    print("yes")
+# n1 = n // 100000
+# n2 = (n % 100000) // 10000
+# n3 = (n % 10000) // 1000
 
-else:
+# n4 = (n % 1000) // 100
+# n5 = (n % 100) // 10
+# n6 = n % 10 
 
-    print("no")  
+# res1 = n1 + n2 + n3
+
+# res2 = n4 + n5 + n6
+
+# if (res1 == res2):
+
+#     print("yes")
+
+# else:
+
+#     print("no")  
+
+# a = 3
+# b = 2
+# c = 1
+
+# if c <= a * b:
+#     if c % a == 0 or c % b == 0:
+#         print("yes")
+#     else:
+#         print("no")
+# else:
+#     print("no")
