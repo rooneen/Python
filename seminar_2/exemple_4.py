@@ -11,3 +11,24 @@
 # Input: 5 -> 5 1 6 5 9
 # Output: 1 9
 
+n = int(input("Введите кол-во арбузов от 1 до 100 - "))
+max_weight = 0
+min_weight = 100
+
+for i in range(n):
+    weight = int(input("Введите вес каждого арбуза от 0 до 10 - "))
+
+
+    if weight < min_weight:
+        min_weight = weight
+
+    
+    elif weight > max_weight:
+        max_weight = weight
+    
+
+    else:
+        weight < 0
+        print("вес < 0!")
+
+print(f"Минимальный вес {min_weight}, Максимальный вес {max_weight}")
