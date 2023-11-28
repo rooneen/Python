@@ -6,3 +6,19 @@
 # Output: 6
 
 
+n = int(input("введите число "))
+f0 = 0
+f1 = 1
+f2 = 0
+num = 1
+
+while f2 <= n:
+    f2 = f0 + f1
+    f0 = f1
+    f1 = f2
+    num = num + 1
+if f0 == n:
+    print(num)
+else:
+    print('-1')
+
